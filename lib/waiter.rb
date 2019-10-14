@@ -25,9 +25,8 @@ attr_accessor :name, :years_of_experience
   end
 
 def best_tipper
-  best_tipped_meal = meals.max do |meal1, meal2|
-    meal1.tip <=> meal2.tip
-  end
+  best_tipped_meal = meals.max
+    end
   best_tipped_meal.customer
 end
 
